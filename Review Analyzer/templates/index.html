@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block head %}
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+            $(function() 
+            {
+              $('a#process_input').bind('click', function() 
+              {
+                $.post('/', 
+                { 
+                  stars: $("form input[type='radio']:checked").val(),
+                  review: $('textarea[name="review"]').val(),
+                  
+                }, function(data) 
+                {
+                  $('#result').text(data.result);
+                });
+                return false;
+              });
+            });
+        </script>
+{% endblock %}
+
+{% block navbarrefresh %}
+<a href="http://127.0.0.1:5000/">Refresh</a>
+{% endblock%}
+
+{%block left%}
+<div class="content-left">
+  <div class="amazon-products clickable">
+    <a href="http://127.0.0.1:5000/products">Amazon Products</a>
+  </div>
+  <div class="tweets clickable">
+    <a href="http://127.0.0.1:5000/tweets">Tweets</a>
+  </div>
+</div>
+{%endblock%}
+
+{% block central %}
+<h4>Movie Review Section</h4>
+<textarea name="review" maxlength="1000" rows="10" cols="40" 
+  style="padding: 5px; background:rgb(3, 19, 34);  color: red;margin-top: 5px; border-radius: 5%; border-color: rgb(3, 19, 34);">Enter your movie review here...</textarea>
+{% endblock %}
+
+
+{%block right%}
+<div class="content-right">
+  <div class="movies clickable">
+    <a href="http://127.0.0.1:5000/">Movies</a>
+  </div>
+  <div class="facebook-comments clickable">
+    <a href="http://127.0.0.1:5000/fb">Facebook Comments</a>
+  </div>
+  {%endblock%}

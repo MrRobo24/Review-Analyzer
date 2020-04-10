@@ -1,0 +1,298 @@
+body{
+    font-family: sans-serif;
+    /*background: rgb(3, 19, 34);*/
+    background-color: rgb(3, 19, 34);
+}
+.grid-container {
+    object-fit: cover;
+    color: white;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    grid-template-rows: auto;
+}
+
+.grid-container > div {
+    
+    margin: 5px 5px 5px 5px;
+    margin-top: 0px;
+    overflow: hidden;
+    text-align: center;
+    /*background: rgba(28, 58, 85, 0.486);*/
+    background: rgb(3, 19, 34);
+}
+
+/*experimenation one begins here -- for navbar*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /*Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefeb2;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+  }
+  
+  /* Add Animation */
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
+  /* The Close Button */
+  .close1,
+  .close2,
+  .close3,
+  .close4,
+  .close5,
+  .close6,
+  .close-contact {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close1,
+  .close2,
+  .close3,
+  .close4,
+  .close5,
+  .close6,
+  .close-contact:hover,
+  .close1,
+  .close2,
+  .close3,
+  .close4,
+  .close5,
+  .close6,
+  .close-contact:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    /* background-color: #5cb85c; */
+    background-color: #333;
+    color: white;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+    overflow-y: auto;
+  }
+  
+  .modal-body > img {
+    float: left;
+    overflow: auto;
+    width: 200px;
+    height: inherit;
+    margin: 5px;
+  }
+  .modal-description > p {
+    text-align: left;
+    color: black;
+    font-family: "Permanent Marker", cursive;
+  }
+  
+  /* modal ends here */
+
+
+
+.navbar {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    background: rgb(25, 56, 83);
+    /*background-color: #333;*/
+  
+    font-family: "Permanent Marker", cursive;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a background color to navbar links on hover */
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #67d7f37e; /*nice color */
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: inherit;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* navbar import ends here */
+  
+/*experimentation one ends here*/
+/*experimentation two---for right pane content begins here*/
+.content-right, .content-left{
+    margin:40px;
+    background: rgb(3, 19, 34);
+    display: grid;
+    
+    /*margin-top: 10px;*/
+    display: grid;
+    /*grid-template-rows: 60px 60px 60px 60px;*/
+    grid-template-rows: 20vh 20vh;
+}
+  .content-right > div, .content-left > div{
+    position: inherit;
+    overflow: hidden;
+    margin: 0px 0px 5px 0px;
+    text-align: left;
+    /*background-color: #333;*/
+    background: rgba(28, 58, 85, 0.486);
+    color: white;
+    font-family: "Permanent Marker", cursive;
+    padding: 10px;
+  }
+  .content-right > div:hover, .content-left > div:hover{
+    cursor: pointer;
+    /*background-color: grey;*/
+    background-color: #67d7f37e;
+  }
+  .content-right > div > a , .content-left > div > a{
+    text-decoration: none;
+    color: white;
+  }
+  
+
+  .content-right, .content-left, .content{
+      margin: 0px 0px 0px 0px;
+      padding: 1px;
+      background: rgba(28, 58, 85, 0.486);
+      
+}
+
+/*experimentation two ends here
+/*stars start here */
+.rating{
+  position: absolute;
+  margin-top: 10px;
+  top: inherit;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  display: flex;
+}
+.rating input{
+  display: none;
+}
+.rating label{
+  display: block;
+  cursor: pointer;
+  width: 35px;
+}
+.rating label:before{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 35px;
+  color: #101010;
+}
+.rating label:after{
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 35px;
+  /*color: #1f9cff;*/
+  color: #0e7fdb;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+  opacity: 1;
+}
+/*stars end here */
+
+body{
+  font-family: 'Comic Neue', cursive;
+}
