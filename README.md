@@ -29,3 +29,17 @@ Appropriate Product Review:
 
 Facebook Comment Polarity Check:
 ![fb_com1](https://github.com/MrRobo24/Review-Analyzer/blob/MrRobo24-patch-1/Review%20Analyzer/Screenshots/ss3_fb_com1.png)
+
+# References
+
+The major references significant for this project are: 
+1. Tensorflow Guide: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=2ahUKEwiy7tHR1JfnAhV5H7cAHcD7A30QFjABegQIBBAB&url=https%3A%2F%2Fwww.tensorflow.org%2Fguide&usg=AOvVaw3x033qMLvBehmxeX4dj8nC
+2. Keras Documentation: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwjagt_-1JfnAhXT7XMBHcDsBQcQFjAAegQICBAC&url=http%3A%2F%2Fkeras.io%2F&usg=AOvVaw330NFtOAF1xcgasnbQvfe5
+3. Freecodecamp.org: https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ
+4. Kaggle Article on Yelp Review Analysis:
+https://www.kaggle.com/athoul01/predicting-yelp-ratings-from-review-text
+5. Amazon India Reviews: https://www.amazon.in
+6. IMDB Reviews: https://www.imdb.com/
+7. Medium Post on Sentiment Analysis : https://towardsdatascience.com/sentiment-analysis-concept-analysis-and-applications-6c94d6f58c17
+8. Medium Post on Word2Vec: https://towardsdatascience.com/introduction-to-word-embedding-and-word2vec-652d0c2060fa
+9. Medium Post on Word Embeddings: https://towardsdatascience.com/word-embeddings-exploration-explanation-and-exploitation-with-code-in-python-5dac99d5d795
